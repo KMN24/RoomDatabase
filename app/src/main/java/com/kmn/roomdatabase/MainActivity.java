@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  добавить базу данных Room --- done
      *  вставить данные / извлечь данные  ---done
-     *  добавить контент провайдер над Room
-     *
+     *  добавить контент провайдер над Room --- done
+     *  Продолжение третьего урока в продолжительном новом приложении SecondAppForContentProviderTest
+     *  Мы будем с одного прило-я отправлять данные в другую
      */
 
     @Override

@@ -2,6 +2,8 @@ package com.kmn.roomdatabase.database;
 
 // Dao - Data Access Object
 
+import android.database.Cursor;
+
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -27,8 +29,16 @@ public interface MusicDao {
     @Query("select * from album")
     List<Album> getAlbums();
 
+    @Query("select * from album")
+    Cursor getAlbumsCursor();
+
+    @Query("select * from album where id = :albumID")
+    Cursor getAlbumWithIDCursor(int albumID);
+
+
     @Query("select * from song")
     List<Song> getSongs();
+
 
     @Delete
     void deleteAlbum(Album album);
