@@ -50,4 +50,13 @@ public class Album { // Создали сущность альбом
     public void setReleaseDate(String releaseDate) {
         mReleaseDate = releaseDate;
     }
+
+    @Override
+    public String toString() {
+        return "Album{" +
+                "mID=" + mID +
+                ", mName='" + mName + '\'' +
+                ", mReleaseDate='" + mReleaseDate + '\'' +
+                '}';
+    }
 }
